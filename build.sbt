@@ -27,5 +27,7 @@ lazy val root = project
       "com.google.code.findbugs" % "jsr305" % "3.0.2",
       "org.jetbrains" % "annotations" % "23.0.0",
       "com.google.protobuf" % "protobuf-javalite" % "3.21.2"
+
+      // JOGL
     )
   )
