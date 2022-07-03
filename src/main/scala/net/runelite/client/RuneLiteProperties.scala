@@ -25,7 +25,11 @@ object RuneLiteProperties {
 
  def getVersion: String = properties.getProperty(RUNELITE_VERSION)
  def getCommit: String = properties.getProperty(RUNELITE_COMMIT)
- def getLauncherVersion: Option[String] = properties.getProperty(LAUNCHER_VERSION_PROPERTY)
+ def getLauncherVersion: Option[String] =
+  if properties.getProperty(LAUNCHER_VERSION_PROPERTY) == null then
+   None
+  else
+   Some(properties.getProperty(LAUNCHER_VERSION_PROPERTY))
  def isDirty: Boolean = properties.getProperty(RUNELITE_DIRTY).toBoolean
  def getDiscordInvite: String = properties.getProperty(DISCORD_INVITE)
 
