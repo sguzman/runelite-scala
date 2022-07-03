@@ -9,4 +9,7 @@ object RuneLite {
   val PLUGIN_DIR: File = new File(RUNELITE_DIR, "plugins")
   val PROFILE_DIR: File = new File(RUNELITE_DIR, "profiles")
   val SCREENSHOT_DIR: File = new File(RUNELITE_DIR, "screenshots")
+  val LOG_DIR: File = new File(RUNELITE_DIR, "logs")
+  val DEFAULT_SESSION_FILE: File = new File(RUNELITE_DIR, "session")
+  val DEFAULT_PROFILE_FILE: File = new File(RUNELITE_DIR, "settings.profile")
 }
