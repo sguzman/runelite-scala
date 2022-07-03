@@ -1,11 +1,11 @@
 val scala3Version = "3.1.3"
+val projectVersion = "1.8.25"
 
 lazy val root = project
   .in(file("."))
   .settings(
     name := "runelite-scala",
     version := "0.1.0-SNAPSHOT",
-    projectVersion := "1.8.25",
 
     scalaVersion := scala3Version,
 
