@@ -5,6 +5,7 @@ lazy val root = project
   .settings(
     name := "runelite-scala",
     version := "0.1.0-SNAPSHOT",
+    projectVersion := "1.8.25",
 
     scalaVersion := scala3Version,
 
@@ -45,5 +46,10 @@ lazy val root = project
 
       // JOCL
       "net.runelite.jocl" % "jocl-rl" % "2.4.0-rc-20220318",
+      "net.runelite.jocl" % "jocl-rl" % "2.4.0-rc-20220318" classifier "macos-x64",
+      "net.runelite.jocl" % "jocl-rl" % "2.4.0-rc-20220318" classifier "macos-arm64",
+
+      "net.runelite" % "runelite-api" % projectVersion,
+
     )
   )
