@@ -26,9 +26,10 @@ lazy val root = project
       "net.java.dev.jna" % "jna-platform" % "5.12.1",
       "com.google.code.findbugs" % "jsr305" % "3.0.2",
       "org.jetbrains" % "annotations" % "23.0.0",
-      "com.google.protobuf" % "protobuf-javalite" % "3.21.2"
+      "com.google.protobuf" % "protobuf-javalite" % "3.21.2",
 
       // JOGL
-      "net.runelite.jogl" % "jogl-rl" % "2.4.0-rc-20220318"
+      "net.runelite.jogl" % "jogl-rl" % "2.4.0-rc-20220318",
+      "net.runelite.jogl" % "jogl-gldesktop-dbg" % "2.4.0-rc-20220318",
     )
   )
