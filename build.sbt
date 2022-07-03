@@ -56,7 +56,5 @@ lazy val root = project
       "net.runelite" % "http-api" % projectVersion,
       "net.runelite" % "discord" % projectVersion,
       "net.runelite" % "orange-extensions" % projectVersion,
-
-
     )
   )
