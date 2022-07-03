@@ -10,6 +10,7 @@ lazy val root = project
     scalaVersion := scala3Version,
 
     libraryDependencies ++= Seq(
+      // Original dependencies
       "org.scalameta" %% "munit" % "0.7.29" % Test,
       "org.slf4j" % "slf4j-api" % "1.7.36",
       "ch.qos.logback" % "logback-classic" % "1.2.11",
@@ -55,5 +56,7 @@ lazy val root = project
       "net.runelite" % "http-api" % projectVersion,
       "net.runelite" % "discord" % projectVersion,
       "net.runelite" % "orange-extensions" % projectVersion,
+
+
     )
   )
