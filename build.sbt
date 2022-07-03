@@ -14,6 +14,8 @@ lazy val root = project
       "ch.qos.logback" % "logback-classic" % "1.2.11",
       "net.sf.jopt-simple" % "jopt-simple" % "5.0.4",
       "com.google.guava" % "guava" % "31.1-jre",
-      "com.google.code.findbugs" % "jsr305" % "3.0.2"
+      "com.google.code.findbugs" % "jsr305" % "3.0.2",
+      "com.google.errorprone" % "error_prone_annotations" % "2.14.0",
+      
     )
   )
