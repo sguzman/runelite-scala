@@ -21,6 +21,8 @@ lazy val root = project
       "org.projectlombok" % "lombok" % "1.18.24" % "provided",
       "org.apache.commons" % "commons-text" % "1.9",
       "org.apache.commons" % "commons-csv" % "1.9.0",
-      "net.runelite.archive-patcher" % "archive-patcher-applier" % "1.2"
+      "net.runelite.archive-patcher" % "archive-patcher-applier" % "1.2",
+      "net.java.dev.jna" % "jna" % "5.12.1",
+      "net.java.dev.jna" % "jna-platform" % "5.12.1"
     )
   )
