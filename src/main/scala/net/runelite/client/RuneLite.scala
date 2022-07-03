@@ -5,6 +5,7 @@ import java.applet.Applet
 import com.google.inject.Injector
 import com.google.inject.Inject
 import plugins.PluginManager
+import externalplugins.ExternalPluginManager
 
 
 object RuneLite {
