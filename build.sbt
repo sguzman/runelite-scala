@@ -13,6 +13,7 @@ lazy val root = project
       "org.slf4j" % "slf4j-api" % "1.7.36",
       "ch.qos.logback" % "logback-classic" % "1.2.11",
       "net.sf.jopt-simple" % "jopt-simple" % "5.0.4",
-      "com.google.guava" % "guava" % "31.1-jre"
+      "com.google.guava" % "guava" % "31.1-jre",
+      "com.google.code.findbugs" % "jsr305" % "3.0.2"
     )
   )
