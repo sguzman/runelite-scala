@@ -15,4 +15,5 @@ object RuneLite {
 
   // 20 * 1024 * 1024 = 20MB
   val MAX_OKHTTP_CACHE_SIZE: Long = 20 * 1024 * 1024
+  val USER_AGENT: String = s"RuneLite/${RuneLiteProperties.getVersion}-${RuneLiteProperties.getCommit}${if RuneLiteProperties.isDirty then "+" else ""}"
 }
