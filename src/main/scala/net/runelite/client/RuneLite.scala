@@ -1,6 +1,7 @@
 package net.runelite.client
 
 import java.io.File
+import java.applet.Applet
 
 
 object RuneLite {
@@ -44,8 +45,20 @@ object RuneLite {
   def clientUI: ClientUI
 
   @Inject
-  def overlayManager: Provider[OverlayManager]
+  def overlayManager: OverlayManager
 
   @Inject
-  def tooltipOverlay: TooltipOverlay
+  def tooltipOverlay: Provider[TooltipOverlay]
+
+  @Inject
+  def worldMapOverlay: Provider[WorldMapOverlay]
+
+  @Inject
+  def applet: Option[Applet]
+
+  @Inject
+  def client: Option[Client]
+
+  @Inject
+  def runetimeConfig: Option[RuntimeConfig]
 }
