@@ -34,5 +34,6 @@ lazy val root = project
       "net.runelite.jogl" % "jogl-rl" % "2.4.0-rc-20220318" classifier "natives-windows-amd64",
       "net.runelite.jogl" % "jogl-rl" % "2.4.0-rc-20220318" classifier "natives-windows-i586",
       "net.runelite.jogl" % "jogl-rl" % "2.4.0-rc-20220318" classifier "natives-linux-amd64",
+      "net.runelite.jogl" % "jogl-rl" % "2.4.0-rc-20220318" classifier "natives-macosx-universal",
     )
   )
