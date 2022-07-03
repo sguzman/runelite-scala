@@ -12,4 +12,7 @@ object RuneLite {
   val LOG_DIR: File = new File(RUNELITE_DIR, "logs")
   val DEFAULT_SESSION_FILE: File = new File(RUNELITE_DIR, "session")
   val DEFAULT_PROFILE_FILE: File = new File(RUNELITE_DIR, "settings.profile")
+
+  // 20 * 1024 * 1024 = 20MB
+  val MAX_OKHTTP_CACHE_SIZE: Long = 20 * 1024 * 1024
 }
