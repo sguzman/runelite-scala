@@ -23,6 +23,8 @@ lazy val root = project
       "org.apache.commons" % "commons-csv" % "1.9.0",
       "net.runelite.archive-patcher" % "archive-patcher-applier" % "1.2",
       "net.java.dev.jna" % "jna" % "5.12.1",
-      "net.java.dev.jna" % "jna-platform" % "5.12.1"
+      "net.java.dev.jna" % "jna-platform" % "5.12.1",
+      "com.google.code.findbugs" % "jsr305" % "3.0.2",
+      "org.jetbrains" % "annotations" % "23.0.0"
     )
   )
