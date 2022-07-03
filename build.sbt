@@ -50,6 +50,10 @@ lazy val root = project
       "net.runelite.jocl" % "jocl-rl" % "2.4.0-rc-20220318" classifier "macos-arm64",
 
       "net.runelite" % "runelite-api" % projectVersion,
-
+      "net.runelite" % "jshell" % projectVersion,
+      "net.runelite" % "client-patch" % projectVersion,
+      "net.runelite" % "http-api" % projectVersion,
+      "net.runelite" % "discord" % projectVersion,
+      "net.runelite" % "orange-extensions" % projectVersion,
     )
   )
