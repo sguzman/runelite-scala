@@ -29,5 +29,6 @@ lazy val root = project
       "com.google.protobuf" % "protobuf-javalite" % "3.21.2"
 
       // JOGL
+      "net.runelite.jogl" % "jogl-rl" % "2.4.0-rc-20220318"
     )
   )
