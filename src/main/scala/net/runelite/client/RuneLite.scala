@@ -16,4 +16,36 @@ object RuneLite {
   // 20 * 1024 * 1024 = 20MB
   val MAX_OKHTTP_CACHE_SIZE: Long = 20 * 1024 * 1024
   val USER_AGENT: String = s"RuneLite/${RuneLiteProperties.getVersion}-${RuneLiteProperties.getCommit}${if RuneLiteProperties.isDirty then "+" else ""}"
+
+  def injector: Injector = Injector.getInstance()
+
+  @Inject
+  def pluginManager: PluginManager
+
+  @Inject
+  def ExternalPluginManager: ExternalPluginManager
+
+  @Inject
+  def eventBus: EventBus
+
+  @Inject
+  def configManager: ConfigManager
+
+  @Inject
+  def sessionManager: SessionManager
+
+  @Inject
+  def discordService: DiscordService
+
+  @Inject
+  def clientSessionManager: ClientSessionManager
+
+  @Inject
+  def clientUI: ClientUI
+
+  @Inject
+  def overlayManager: Provider[OverlayManager]
+
+  @Inject
+  def tooltipOverlay: TooltipOverlay
 }
