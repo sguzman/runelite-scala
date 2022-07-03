@@ -14,8 +14,13 @@ lazy val root = project
       "ch.qos.logback" % "logback-classic" % "1.2.11",
       "net.sf.jopt-simple" % "jopt-simple" % "5.0.4",
       "com.google.guava" % "guava" % "31.1-jre",
-      "com.google.code.findbugs" % "jsr305" % "3.0.2",
-      "com.google.errorprone" % "error_prone_annotations" % "2.14.0",
-      
+      "com.google.inject" % "guice" % "5.1.0",
+      "com.google.code.gson" % "gson" % "2.9.0",
+      "net.runelite.pushingpixels" % "substance" % "8.0.02",
+      "net.runelite.pushingpixels" % "trident" % "1.5.00",
+      "org.projectlombok" % "lombok" % "1.18.24" % "provided",
+      "org.apache.commons" % "commons-text" % "1.9",
+      "org.apache.commons" % "commons-csv" % "1.9.0",
+      "net.runelite.archive-patcher" % "archive-patcher-applier" % "1.2"
     )
   )
