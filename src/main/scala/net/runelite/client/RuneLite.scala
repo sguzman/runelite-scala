@@ -2,6 +2,7 @@ package net.runelite.client
 
 import java.io.File
 import java.applet.Applet
+import com.google.inject.Injector
 
 
 object RuneLite {
