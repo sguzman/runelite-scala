@@ -25,6 +25,7 @@ lazy val root = project
       "net.java.dev.jna" % "jna" % "5.12.1",
       "net.java.dev.jna" % "jna-platform" % "5.12.1",
       "com.google.code.findbugs" % "jsr305" % "3.0.2",
-      "org.jetbrains" % "annotations" % "23.0.0"
+      "org.jetbrains" % "annotations" % "23.0.0",
+      "com.google.protobuf" % "protobuf-javalite" % "3.21.2"
     )
   )
