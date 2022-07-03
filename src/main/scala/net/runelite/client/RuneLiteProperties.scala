@@ -22,4 +22,12 @@ object RuneLiteProperties {
 
  val properties = new Properties()
  properties.load(RuneLiteProperties.getClass.getResourceAsStream("runelite.properties"))
+
+ def getVersion: String = properties.getProperty(RUNELITE_VERSION)
+ def getCommit: String = properties.getProperty(RUNELITE_COMMIT)
+ def getLauncherVersion: Option[String] = properties.getProperty(LAUNCHER_VERSION_PROPERTY)
+ def isDirty: Boolean = properties.getProperty(RUNELITE_DIRTY).toBoolean
+ def getDiscordInvite: String = properties.getProperty(DISCORD_INVITE)
+
+
 }
