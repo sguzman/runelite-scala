@@ -17,4 +17,7 @@ object RuneLiteProperties {
  val RUNELITE_DIRTY: String = "runelite.dirty"
  val TROUBLESHOOTING_LINK: String = "runelite.wiki.troubleshooting.link"
  val RUNELITE_VERSION: String = "runelite.version"
+
+ val properties = new Properties()
+ properties.load(RuneLiteProperties.getClass.getResourceAsStream("runelite.properties"))
 }
