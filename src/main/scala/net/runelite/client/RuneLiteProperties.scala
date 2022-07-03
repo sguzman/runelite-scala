@@ -49,5 +49,5 @@ object RuneLiteProperties {
 
  def getJavConfigBackup: String = properties.getProperty(JAV_CONFIG_BACKUP)
  def getJavConfig: String = properties.getProperty(JAV_CONFIG)
- 
+ def getRuneLiteConfig: String = properties.getProperty(RUNELITE_CONFIG)
 }
