@@ -1,5 +1,7 @@
 package net.runelite.client
 
+import java.util.Properties
+
 object RuneLiteProperties {
  val API_BASE: String = "runelite.api.base"
  val BUILDING_LINK: String = "runelite.wiki.building.link"
