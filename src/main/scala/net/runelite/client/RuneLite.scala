@@ -3,6 +3,7 @@ package net.runelite.client
 import java.io.File
 import java.applet.Applet
 import net.runelite.client.plugins.PluginManager
+import net.runelite.client.config.ConfigManager
 import net.runelite.client.externalplugins.ExternalPluginManager
 import com.google.common.eventbus.EventBus
 
