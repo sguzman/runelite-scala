@@ -4,7 +4,6 @@ import java.io.File
 import java.applet.Applet
 import net.runelite.client.plugins.PluginManager
 import net.runelite.client.externalplugins.ExternalPluginManager
-import externalplugins.ExternalPluginManager
 import com.google.common.eventbus.EventBus
 
 
