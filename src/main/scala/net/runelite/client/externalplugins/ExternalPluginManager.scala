@@ -1,5 +1,5 @@
 package net.runelite.client.externalplugins
 
-object ExternalPluginManager {
+class ExternalPluginManager {
   
 }
