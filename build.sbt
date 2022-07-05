@@ -9,6 +9,14 @@ lazy val root = project
 
     scalaVersion := scala3Version,
 
+    resolvers ++= Seq(
+      "RuneLite Repository" at "https://repo.runelite.net",
+      "Central Repository" at "https://repo1.maven.org/maven2/",
+      "Typesafe Repository" at "https://repo.typesafe.com/typesafe/releases/",
+      "Sonatype Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots",
+      "Sonatype Releases" at "https://oss.sonatype.org/content/repositories/releases"
+    ),
+
     libraryDependencies ++= Seq(
       // Original dependencies
       "org.scalameta" %% "munit" % "0.7.29" % Test,
@@ -16,7 +24,6 @@ lazy val root = project
       "ch.qos.logback" % "logback-classic" % "1.2.11",
       "net.sf.jopt-simple" % "jopt-simple" % "5.0.4",
       "com.google.guava" % "guava" % "31.1-jre",
-      "com.google.inject" % "guice" % "5.1.0",
       "com.google.code.gson" % "gson" % "2.9.0",
       "net.runelite.pushingpixels" % "substance" % "8.0.02",
       "net.runelite.pushingpixels" % "trident" % "1.5.00",
@@ -33,28 +40,31 @@ lazy val root = project
       // JOGL
       "net.runelite.jogl" % "jogl-rl" % "2.4.0-rc-20220318",
       "net.runelite.jogl" % "jogl-gldesktop-dbg" % "2.4.0-rc-20220318",
-      "net.runelite.jogl" % "jogl-rl" % "2.4.0-rc-20220318" classifier "natives-windows-amd64",
-      "net.runelite.jogl" % "jogl-rl" % "2.4.0-rc-20220318" classifier "natives-windows-i586",
-      "net.runelite.jogl" % "jogl-rl" % "2.4.0-rc-20220318" classifier "natives-linux-amd64",
-      "net.runelite.jogl" % "jogl-rl" % "2.4.0-rc-20220318" classifier "natives-macosx-universal",
+      //"net.runelite.jogl" % "jogl-rl" % "2.4.0-rc-20220318" classifier "natives-windows-amd64",
+      //"net.runelite.jogl" % "jogl-rl" % "2.4.0-rc-20220318" classifier "natives-windows-i586",
+      //"net.runelite.jogl" % "jogl-rl" % "2.4.0-rc-20220318" classifier "natives-linux-amd64",
+      //"net.runelite.jogl" % "jogl-rl" % "2.4.0-rc-20220318" classifier "natives-macosx-universal",
 
       // Gluegen
-      "net.runelite.jogl" % "gluegen-rt" % "2.4.0-rc-20220318",
-      "net.runelite.jogl" % "gluegen-rt" % "2.4.0-rc-20220318" classifier "natives-windows-amd64",
-      "net.runelite.jogl" % "gluegen-rt" % "2.4.0-rc-20220318" classifier "natives-windows-i586",
-      "net.runelite.jogl" % "gluegen-rt" % "2.4.0-rc-20220318" classifier "natives-linux-amd64",
-      "net.runelite.jogl" % "gluegen-rt" % "2.4.0-rc-20220318" classifier "natives-macosx-universal",
+      //"net.runelite.jogl" % "gluegen-rt" % "2.4.0-rc-20220318",
+      //"net.runelite.jogl" % "gluegen-rt" % "2.4.0-rc-20220318" classifier "natives-windows-amd64",
+      //"net.runelite.jogl" % "gluegen-rt" % "2.4.0-rc-20220318" classifier "natives-windows-i586",
+      //"net.runelite.jogl" % "gluegen-rt" % "2.4.0-rc-20220318" classifier "natives-linux-amd64",
+      //"net.runelite.jogl" % "gluegen-rt" % "2.4.0-rc-20220318" classifier "natives-macosx-universal",
 
       // JOCL
+      "net.runelite.jocl" % "jocl" % "1.0",
+      /*
       "net.runelite.jocl" % "jocl-rl" % "2.4.0-rc-20220318",
       "net.runelite.jocl" % "jocl-rl" % "2.4.0-rc-20220318" classifier "macos-x64",
       "net.runelite.jocl" % "jocl-rl" % "2.4.0-rc-20220318" classifier "macos-arm64",
+      */
 
-      "net.runelite" % "runelite-api" % projectVersion,
-      "net.runelite" % "jshell" % projectVersion,
-      "net.runelite" % "client-patch" % projectVersion,
-      "net.runelite" % "http-api" % projectVersion,
-      "net.runelite" % "discord" % projectVersion,
-      "net.runelite" % "orange-extensions" % projectVersion
+      "net.runelite" % "runelite-api" % "1.8.9",
+      "net.runelite" % "jshell" % "1.8.9",
+      "net.runelite" % "client-patch" % "1.8.9",
+      "net.runelite" % "http-api" % "1.8.7",
+      "net.runelite" % "discord" % "1.4",
+      "net.runelite" % "orange-extensions" % "1.0"
     )
   )

@@ -2,10 +2,9 @@ package net.runelite.client
 
 import java.io.File
 import java.applet.Applet
-import com.google.inject.Injector
-import com.google.inject.Inject
-import plugins.PluginManager
+import net.runelite.client.plugins.PluginManager
 import externalplugins.ExternalPluginManager
+import com.google.common.eventbus.EventBus
 
 
 object RuneLite {
@@ -22,47 +21,19 @@ object RuneLite {
   val MAX_OKHTTP_CACHE_SIZE: Long = 20 * 1024 * 1024
   val USER_AGENT: String = s"RuneLite/${RuneLiteProperties.getVersion}-${RuneLiteProperties.getCommit}${if RuneLiteProperties.isDirty then "+" else ""}"
 
-  def injector: Injector = Injector.getInstance()
-
-  @Inject
-  def pluginManager: PluginManager
-
-  @Inject
-  def ExternalPluginManager: ExternalPluginManager
-
-  @Inject
-  def eventBus: EventBus
-
-  @Inject
-  def configManager: ConfigManager
-
-  @Inject
-  def sessionManager: SessionManager
-
-  @Inject
-  def discordService: DiscordService
-
-  @Inject
-  def clientSessionManager: ClientSessionManager
-
-  @Inject
-  def clientUI: ClientUI
-
-  @Inject
-  def overlayManager: OverlayManager
-
-  @Inject
-  def tooltipOverlay: Provider[TooltipOverlay]
-
-  @Inject
-  def worldMapOverlay: Provider[WorldMapOverlay]
-
-  @Inject
-  def applet: Option[Applet]
-
-  @Inject
-  def client: Option[Client]
-
-  @Inject
-  def runetimeConfig: Option[RuntimeConfig]
+  //def injector: Injector = Injector.getInstance()
+  val pluginManager: Option[PluginManager] = None
+  val ExternalPluginManager: Option[ExternalPluginManager] = None
+  val eventBus: Option[EventBus] = None
+  val configManager: Option[ConfigManager] = None
+  val sessionManager: Option[SessionManager] = None
+  val discordService: Option[DiscordService] = None
+  val clientSessionManager: Option[ClientSessionManager] = None
+  val clientUI: Option[ClientUI] = None
+  val overlayManager: Option[OverlayManager] = None
+  val tooltipOverlay: Option[Provider[TooltipOverlay]] = None
+  val worldMapOverlay: Option[Provider[WorldMapOverlay]] = None
+  val applet: Option[Applet]
+  val client: Option[Client]
+  val runetimeConfig: Option[RuntimeConfig]
 }
