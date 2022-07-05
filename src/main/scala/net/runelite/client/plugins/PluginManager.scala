@@ -1,5 +1,5 @@
 package net.runelite.client.plugins
 
-object PluginManager {
+class PluginManager {
   
 }
